@@ -1,7 +1,7 @@
 import sys
-from delete import delete
 from create import create
-from list import get_list, show_help
+from delete import delete
+from list import get_list
 
 
 # taking arguments amount
@@ -13,13 +13,11 @@ if len(sys.argv) < 2:
 _, command, *args = sys.argv
 
 
-
 # our commands to run function
 commands = {
-    'help': show_help,
-    'list': get_list,
     'create': create,
     'delete': delete,
+    'list': get_list,
 }
 
 # run requests
